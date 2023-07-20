@@ -14,16 +14,19 @@ pyscreenshot
 os
 sys
 
-# Processo da primeira utilização:
+# 1 - Processo da primeira utilização:
 Faça o git clone ou download ZIP
 
 Abra essa pasta no terminal e execute
-
+~/.../print_to_file/$
 ```
 cd src
 chmod +x Print_to_File.sh
 chmod +x exec.sh
 ```
+
+_Caso não queira criar um atalho, pule esta etapa:_
+## 1.1 - Para que seja possível criar um atalho no Linux para execução da aplicação, o próximo passo é imprescindivel.
 
 Abra o arquivo **Print_to_File.sh** e altere o valor "/complete/path/to/this/archive" para o caminho até esta pasta.
 
@@ -39,3 +42,6 @@ para:
 cd /home/USER/Aplicativos/print_to_file/src
 ./exec.sh
 ```
+
+Abra o arquivo **exec.sh** e faça as seguintes alterações
+

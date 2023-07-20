@@ -3,13 +3,20 @@
 
 $print
 
+#---------------------------------------------------------------------------------------------#
+# DEFINIÇÃO DE INICIAL DO ARQUIVO                                                             #
+#---------------------------------------------------------------------------------------------#
+
 inicial_arquivo="BD"
 
 pasta_origem=$(pwd)
 
 print=$(python3.8 $pasta_origem/pyshot.py)
+#---------------------------------------------------------------------------------------------#
+# DEFINIÇÃO DE INICIAL DO ARQUIVO                                                             #
+#---------------------------------------------------------------------------------------------#
 
-pasta_destino="/home/gabriel_aquino/Documentos/workspace/Estacio_Materia_Banco_de_Dados/img3/"
+pasta_destino="/home/gabriel_aquino/Documentos/github/workspace/Estacio_Materia_Banco_de_Dados/img3/"
 
 clipboardini="![](img3/$inicial_arquivo"
 clipboardfin=".png)"
