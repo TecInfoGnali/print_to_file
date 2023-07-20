@@ -91,7 +91,7 @@ Altere de acordo com a sua necessidade, aqui está configurado com o padrão do 
 format_print=".png"
 ```
 
-## 2.4 Definição de clipboard
+## 2.4 Definição de clipboard (Desabilitado por padrão)
 
 Altere de acordo com a sua necessidade, aqui está configurado para usar o clipboard em arquivo .md (markdown):
 

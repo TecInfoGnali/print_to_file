@@ -42,7 +42,8 @@ else
    echo "ERRO: "$proxima_seq >&2; exit 1 
 fi 
 
-echo $clipboardini$inicial_arquivo$proxima_seq$format_print$clipboardfin | xclip -selection clipboard
+# # Para habilitar o salvamento do caminho para o arquivo no clipboard, retire o Comentário do ítem abaixo
+# echo $clipboardini$inicial_arquivo$proxima_seq$format_print$clipboardfin | xclip -selection clipboard
 
 sleep 0.1
 
