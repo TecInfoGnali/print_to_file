@@ -1,3 +1,7 @@
+# ! EM DESENVOLVIMENTO !
+
+
+
 # Aplicativo  - print_to_file -
 Aplicativo utilizando linguagem de programação básica em Shell e Python 3.8 que:
  - Executa print screen utilizando o formato padrão do SO - .png
@@ -22,6 +26,8 @@ sys
 
 # 1 - Processo da primeira utilização:
 ## 1.1 Faça o git clone ou download ZIP
+
+Vá para a pasta ou extraia do ZIP
 
 ## 1.2 Primeiras ações:
 
