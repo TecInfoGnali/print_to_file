@@ -20,9 +20,9 @@ Aplicação desenvolvida e testada em **SO** Linux, **Distribuição** Ubuntu v.
 
 ### Bibliotecas utilizadas:
 python:
-pyscreenshot
-os
-sys
+ - pyscreenshot
+ - os
+ - sys
 
 # 1 - Processo da primeira utilização:
 ## 1.1 Faça o git clone ou download ZIP
@@ -97,8 +97,43 @@ Altere de acordo com a sua necessidade, aqui está configurado para usar o clipb
 
 ```
 clipboardini="![](./"
-clipboardfin=".png)"
+clipboardfin=")"
 ```
 
+# 3 Definições do printscren com o pyscreenshot, 
+Como exemplo, para fazer a próximas alterações, utilizei o programa xdotool para encontrar valores da posição do mouse e utilizei o xclip para copiar o arquivo automaticamente
 
+## 3.1 Adquirindo as informações da posição do mouse: (COM XCLIP INSTALADO)
+Para um print screen são necessários 4 pontos de localização do mouse, por conveniencia separamos em:
+ - Canto Superior Esquerdo
+ - Canto Inferior Direito
+
+### Coloque a posição do mouse **NO CANTO SUPERIOR ESQUERDO** onde você quer e **Execute**:
+```
+eval $(xdotool getmouselocation --shell);echo X1=\"$X\"$'\n'Y1=\"$Y\" | xclip -selection clipboard 
+```
+Abra o arquivo **pyshot.py** com um editor de texto e substitua as linhas 11 e 12 pelos valores no clipboard (ctrl+v)
+
+### Coloque a posição do mouse **NO CANTO INFERIOR DIREITO** onde você quer e **Execute**:
+```
+eval $(xdotool getmouselocation --shell);echo X2=\"$X\"$'\n'Y2=\"$Y\" | xclip -selection clipboard 
+```
+No arquivo **pyshot.py** substitua as linhas 16 e 17 pelos valores no clipboard (ctrl+v)
+
+## 3.2 Adquirindo as informações da posição do mouse: (SEM XCLIP INSTALADO)
+Para um print screen são necessários 4 pontos de localização do mouse, por conveniencia separamos em:
+ - Canto Superior Esquerdo
+ - Canto Inferior Direito
+
+### Coloque a posição do mouse **NO CANTO SUPERIOR ESQUERDO** onde você quer e **Execute**:
+```
+eval $(xdotool getmouselocation --shell);echo X1=\"$X\"$'\n'Y1=\"$Y\" 
+```
+Abra o arquivo **pyshot.py** com um editor de texto e substitua as linhas 11 e 12 pelos valores no shell
+
+### Coloque a posição do mouse **NO CANTO INFERIOR DIREITO** onde você quer e **Execute**:
+```
+eval $(xdotool getmouselocation --shell);echo X2=\"$X\"$'\n'Y2=\"$Y\"
+```
+No arquivo **pyshot.py** substitua as linhas 16 e 17 pelos valores no shell
 
