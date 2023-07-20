@@ -19,20 +19,23 @@ Faça o git clone ou download ZIP
 
 Abra essa pasta no terminal e execute
 
-chmod +x Print_to_file.sh
+```
+cd src
+chmod +x Print_to_File.sh
 chmod +x exec.sh
+```
 
-Abra o arquivo **Print_to_file.sh** e altere o valor "/complete/path/to/this/archive" para o caminho até esta pasta.
+Abra o arquivo **Print_to_File.sh** e altere o valor "/complete/path/to/this/archive" para o caminho até esta pasta.
 
 exemplo:
 
 de:
-'''
+```
 cd /complete/path/to/this/archive
 ./exec.sh
-'''
+```
 para:
-'''
+```
 cd /home/USER/Aplicativos/print_to_file/src
 ./exec.sh
-'''
+```
