@@ -14,16 +14,25 @@ pyscreenshot
 os
 sys
 
-
 # Processo da primeira utilização:
 Faça o git clone ou download ZIP
-
 
 Abra essa pasta no terminal e execute
 
 chmod +x Print_to_file.sh
 chmod +x exec.sh
 
-Feito o git-clone, altere o caminho onde o aplicativo se encontra no arquivo **Print_to_file.sg**
+Abra o arquivo **Print_to_file.sh** e altere o valor "/complete/path/to/this/archive" para o caminho até esta pasta.
 
+exemplo:
 
+de:
+'''
+cd /complete/path/to/this/archive
+./exec.sh
+'''
+para:
+'''
+cd /home/USER/Aplicativos/print_to_file/src
+./exec.sh
+'''
