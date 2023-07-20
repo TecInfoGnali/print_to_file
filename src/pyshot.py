@@ -9,17 +9,17 @@ import pyscreenshot
 #CANTO SUPERIOR ESQUERDO
 # Sem XCLIP
 # eval $(xdotool getmouselocation --shell);echo X1=\"$X\"$'\n'Y1=\"$Y\" 
-X1="37"
-Y1="332"
+x1="37"
+y1="332"
 
 #CANTO INFERIOR DIREITO
 # Sem XCLIP
 # eval $(xdotool getmouselocation --shell);echo X2=\"$X\"$'\n'Y2=\"$Y\" 
-X2="960"
-Y2="848"
+x2="960"
+y2="848"
 
-# part of the screen
-im = pyscreenshot.grab(bbox=(X1, Y1, X2, Y2))  # X1,Y1,X2,Y2
+# Ação da aplicação
+im = pyscreenshot.grab(bbox=(x1, y1, x2, y2))  # X1,Y1,X2,Y2
 
-# save image file
+# Nome da imagem salva
 im.save("UltimaCaptura.png")

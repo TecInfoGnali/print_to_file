@@ -110,13 +110,13 @@ Para um print screen são necessários 4 pontos de localização do mouse, por c
 
 ### Coloque a posição do mouse **NO CANTO SUPERIOR ESQUERDO** onde você quer e **Execute**:
 ```
-eval $(xdotool getmouselocation --shell);echo X1=\"$X\"$'\n'Y1=\"$Y\" | xclip -selection clipboard 
+eval $(xdotool getmouselocation --shell);echo x1=\"$X\"$'\n'y1=\"$Y\" | xclip -selection clipboard 
 ```
 Abra o arquivo **pyshot.py** com um editor de texto e substitua as linhas 11 e 12 pelos valores no clipboard (ctrl+v)
 
 ### Coloque a posição do mouse **NO CANTO INFERIOR DIREITO** onde você quer e **Execute**:
 ```
-eval $(xdotool getmouselocation --shell);echo X2=\"$X\"$'\n'Y2=\"$Y\" | xclip -selection clipboard 
+eval $(xdotool getmouselocation --shell);echo x2=\"$X\"$'\n'y2=\"$Y\" | xclip -selection clipboard 
 ```
 No arquivo **pyshot.py** substitua as linhas 16 e 17 pelos valores no clipboard (ctrl+v)
 
@@ -129,11 +129,11 @@ Para um print screen são necessários 4 pontos de localização do mouse, por c
 ```
 eval $(xdotool getmouselocation --shell);echo X1=\"$X\"$'\n'Y1=\"$Y\" 
 ```
-Abra o arquivo **pyshot.py** com um editor de texto e substitua as linhas 11 e 12 pelos valores no shell
+Abra o arquivo **pyshot.py** com um editor de texto e substitua as linhas 12 e 13 pelos valores no shell
 
 ### Coloque a posição do mouse **NO CANTO INFERIOR DIREITO** onde você quer e **Execute**:
 ```
 eval $(xdotool getmouselocation --shell);echo X2=\"$X\"$'\n'Y2=\"$Y\"
 ```
-No arquivo **pyshot.py** substitua as linhas 16 e 17 pelos valores no shell
+No arquivo **pyshot.py** substitua as linhas 18 e 19 pelos valores no shell
 
