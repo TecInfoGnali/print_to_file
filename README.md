@@ -23,6 +23,8 @@ sys
 # 1 - Processo da primeira utilização:
 ## 1.1 Faça o git clone ou download ZIP
 
+## 1.2 Primeiras ações:
+
 Abra essa pasta no terminal e execute
 ~/.../print_to_file/$
 ```
@@ -32,7 +34,7 @@ chmod +x exec.sh
 ```
 
 
-## 1.2 - Para que seja possível criar um atalho no Linux para execução da aplicação, o próximo passo é imprescindivel. (Etapa não obrigatória)
+## 1.3 - Para que seja possível criar um atalho no Linux para execução da aplicação, o próximo passo é imprescindivel. (Etapa não obrigatória)
 
 Abra o arquivo **Print_to_File.sh** e altere o valor "$(pwd)" para o caminho até esta pasta.
 
